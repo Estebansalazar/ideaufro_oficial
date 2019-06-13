@@ -28,6 +28,33 @@ body{
 }
 
 
+/* ==================================================
+  Parallax Styling
+  ================================================== */
+
+  .block {
+    color: #fff;
+    height: 490px;
+    overflow: hidden;
+    padding-top: 85px;
+  }
+  
+  .block h2 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  
+  .block p {
+    color: #fff;
+    margin-bottom: 45px;
+  }
+  
+  #para img{
+    width: 350px;
+  }
+  
+
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
@@ -357,6 +384,8 @@ h6 {
   color: #fff;
 }
 
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -430,6 +459,9 @@ h6 {
   color: #004289;
 }
 
+.drop{
+  font-size: 30px;
+}
 .main-nav .drop-down ul a:hover,
 .main-nav .drop-down ul .active > a,
 .main-nav .drop-down ul li:hover > a {
@@ -705,6 +737,38 @@ section-bg2{
 #about .about-extra h4 {
   font-weight: 600;
   font-size: 24px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+.container2 p {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container2 p span.typed-text {
+  font-weight: normal;
+  color: white;
+}
+.container2 p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container2 p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
 }
 
 
@@ -1311,7 +1375,7 @@ padding-top: 20px !important;
 }
 
 #testimonials .owl-dot.active {
-  background-color: #007bff;
+  background-color: #c0daf5;
 }
 
 /* Team Section
@@ -1502,6 +1566,15 @@ padding-top: 20px !important;
   color: #fff;
 }
 
+.lafactory{
+font-size: 50px;
+}
+
+
+.lafactoryp{
+  font-size: 20px;
+  }
+
 #contact .info {
   color: #283d50;
 }
@@ -1574,6 +1647,27 @@ padding-top: 20px !important;
   cursor: pointer;
 }
 
+.tama{
+  width: 90%;
+}
+
+.tama7{
+  width: 90%;
+
+}
+
+.tama4{
+  width: 93%;
+
+}
+
+.tama2{
+  width: 96%;
+}
+
+.tama9{
+  width: 99%;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1721,6 +1815,89 @@ padding-top: 20px !important;
   color: #f1f7ff;
 }
 
+}
+.animated-text {
+  font-size: 39px;
+  padding: 0px;
+  text-align: center;
+  color: #3498db;
+}
+.animated-text:after {
+  margin-left: 0px;
+  display: block;
+  content: "";
+  height: 1px;
+  background-color: white;
+  position: relative;
+  left: 0;
+  bottom: -6px;
+}
+.animated-text:after {
+  animation-name: line-loading;
+  animation-duration: 7s;
+}
+.animated-text.drop div {
+  animation-name: drop;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+}
+.animated-text.drop div:nth-child(4n+0) {
+  animation-duration: 0s;
+}
+.animated-text.drop div:nth-child(4n+1) {
+  animation-duration: 1s;
+}
+.animated-text.drop div:nth-child(4n+2) {
+  animation-duration: 2s;
+}
+.animated-text.drop div:nth-child(4n+3) {
+  animation-duration: 3s;
+}
+.animated-text.drop div:nth-child(4n+4) {
+  animation-duration: 4s;
+}
+.animated-text.drop div:nth-child(4n+5) {
+  animation-duration: 5s;
+}
+.animated-text.drop div:nth-child(4n+6) {
+  animation-duration: 6s;
+}
+@keyframes line-loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes drop {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    top: -20px;
+  }
+  40% {
+    top: 0px;
+  }
+  60% {
+    top: -30px;
+  }
+  80% {
+    top: 0px;
+  }
+  90% {
+    top: -15px;
+    opacity: 0.2;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
@@ -1769,6 +1946,15 @@ padding-top: 20px !important;
     bottom: 15px;
   }
 
+  .factimg{
+    width: 70% !important; 
+  }
+
+  #para img{
+    width: 300px;
+  }
+
+
 #intro h1 {
   color: #fff;
   font-family: "Raleway", sans-serif;
@@ -1793,6 +1979,43 @@ padding-top: 20px !important;
   #intro .intro-info {
     width: 100%;
   }
+
+  .tama{
+
+    width: 70%;
+  }
+
+  .tama2{
+
+    width: 70% !important;
+  }
+
+  .tama3{
+
+    width: 75% !important;
+  }
+
+  .tama4{
+
+    width: 65% !important;
+  }
+
+  .tama7{
+    width: 65% !important;
+  }
+
+
+
+
+  .lafactoryp{
+    font-size: 17px;
+    }
+    
+
+  .lafactory{
+    font-size: 32px;
+    }
+    
 
 #intro h1 {
   color: #fff;
